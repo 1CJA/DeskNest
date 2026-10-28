@@ -1,0 +1,2 @@
+"""Local persistence for DeskNest."""
+

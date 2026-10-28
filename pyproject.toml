@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desknest"
+version = "0.1.1"
+description = "Local Windows desktop organizer and launcher"
+requires-python = ">=3.10"
+dependencies = ["PySide6-Essentials==6.12.0", "pywin32==312; sys_platform == 'win32'"]
+
+[project.gui-scripts]
+desknest = "desknest.app:main"
+
+[tool.setuptools.packages.find]
+include = ["desknest*"]
